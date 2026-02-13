@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine Baby?</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Icon -->
+    <link rel="Icon" href="images/heart.gif" type="image/gif">
+</head>
+<body>
+    <div class="hearts"></div>
+    <div class="container">
+        <!-- Step 1 -->
+        <div class="step active" id="step1">
+            <img src="images/AshSnow.gif" alt="Cute Cat" class="cat-img">
+            <h1>Will you be my Valentine? 💝</h1>
+            <div class="buttons">
+                <button class="btn btn-yes" onclick="goToStep2()">Yes</button>
+                <button class="btn btn-no" onmouseover="moveButton(this)" onclick="moveButton(this)">No</button>
+            </div>
+        </div>
+
+            <!-- Step 2 -->
+        <div class="step" id="step2">
+                <img src="images/are u sure.gif" alt="Cute Cat in Love" class="cat-img">
+                <h1>Em chắc chưa ? 😼</h1>
+                <div class="buttons">
+                <button class="btn btn-yes" onclick="goToStep3()">Chắc chắn 100%</button>
+                <button class="btn btn-no" onmouseover="moveButton(this)" onclick="moveButton(this)">Để em nghĩ thêm...</button>
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step" id="step3">
+            <img src="images/Hugging.gif" alt="Cute Cat in Love" class="cat-img">
+            <h1>Ấn đồng ý rồi là không được rút lại đâu nhé =))))))))</h1>
+            <div class="buttons">
+                <button class="btn btn-yes" onclick="finalStep()">Chắc chắn rồi</button>
+            </div>
+        </div>
+
+            <div class="final-message">
+                <img src="images/kisses.gif" alt="Cute Cat in Love" class="cat-img">
+                <p>Yaaaahoooooo, Chúc mừng em đã trở thành vợ anh, iu lắm đấy ! 🥰</p>
+                <p style="margin-top: 15px;">Ấn vào đây để xem bất ngờ phía sau nhé! 🤭</p>
+            </div>
+
+            <button class="facebook-btn" onclick="openLetter()">
+                Ấn vào đây 💌
+            </button>
+
+            <!-- Cute love letter popup -->
+            <div class="letter-overlay" id="letterOverlay">
+                <div class="letter-images letter-images-left">
+                    <img src="images/photo1.jpg" alt="Love photo 1" class="side-img">
+                    <img src="images/photo2.jpg" alt="Love photo 2" class="side-img">
+                    <img src="images/photo3.jpg" alt="Love photo 3" class="side-img">
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-header">
+                        <span class="letter-tag">To: Anh Chieu Tan 💝</span>
+                    </div>
+                    <div class="letter-body">
+                        <p>Không sến, không lan man, không dài dòng =))))) ✨</p>
+                        <p>Cảm ơn em trong thời gian qua đã đồng hành cùng anh. 52 ngày không dài cũng không ngắn, nhưng cũng đã giúp anh có thêm niềm vui sau một ngày dài 💫</p>
+                        <p>Anh hy vọng trong tương lai sẽ có thêm nhiều ngày đẹp hơn nữa cùng em, có thể sẽ là tới khi game sập =)))))))))🫶</p>
+                        <p class="letter-sign">Mãi iu em, chiếc tri kỷ siêu bám chồng :)). ❤️</p>
+                    </div>
+                    <div class="letter-footer">
+                        <button class="btn btn-yes" onclick="closeLetter()">Chần chờ gì vợ ơi anh đâyyyy💌</button>
+                    </div>
+                </div>
+
+                <div class="letter-images letter-images-right">
+                    <img src="images/photo4.jpg" alt="Love photo 4" class="side-img">
+                    <img src="images/photo5.jpg" alt="Love photo 5" class="side-img">
+                    <img src="images/photo6.jpg" alt="Love photo 6" class="side-img">
+                </div>
+            </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
+            
+
+        
+
